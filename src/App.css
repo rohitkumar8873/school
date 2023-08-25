@@ -1,38 +1,1413 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 1em sans-serif;
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #DB4A21;
+  padding: 0.4rem;
+  margin-bottom: 0;
+
+}
+
+.first ul,
+.second ul {
+  display: flex;
+  margin-left: 4rem;
+  position: relative;
+  top: 7px;
+  list-style-type: none;
+}
+
+.first ul li,
+.second ul li {
+  margin-left: 1rem;
+  font-weight: 600;
+  list-style: none;
+  font-size: 1rem;
+  padding: .5rem;
+  margin-left: 2rem;
+  border: none;
+  color: whitesmoke;
+}
+
+.first ul li:nth-of-type(1) {
+  position: relative;
+  top: 5px;
+}
+
+.first ul li a {
+  color: var(--white);
+
+}
+
+.first ul li i,
+.second ul li i {
+  color: whitesmoke;
+  position: relative;
+
+  font-size: 1.3rem;
+}
+
+.first ul li i:hover,
+.second ul li i:hover {
+
+  color: var(--blue);
+}
+
+.btn1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+
+  cursor: pointer;
+  color: #8B042D;
+  position: relative;
+  bottom: 3px;
+}
+
+.btn1 {
+  color: #8B042D;
+  /* color: black; */
+}
+
+.btn1:hover {
+  background-color: aquamarine;
+  color: whitesmoke;
+  transition: 0.3s;
+}
+
+.btn2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #8B042D;
+  position: relative;
+  bottom: 3px;
+}
+
+.logo-img {
+  width: 100px;
+  height: 100px;
+}
+
+.sec-header-logo {
+  display: flex;
+  /* border: 2px solid red; */
+}
+
+.sec-header {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.sec-header-side {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+.school-name {
+  margin-left: 1.4rem;
+  margin-top: 1rem;
+}
+
+.school-name H1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+  color: #8B042D;
+}
+
+.school-name p {
+  font-style: italic;
+  color: red;
+}
+
+.office {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.office i,
+.message i {
+  margin-right: 0.7rem;
+  font-size: 2rem;
+  color: #8B042D;
+  padding: 0.5rem;
+  height: 50px;
+  /* background: blue; */
+  box-shadow: 2px 3px 3px whitesmoke;
+  border-radius: 50%;
+}
+
+.office h1,
+.message h1 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #8B042D;
+  margin-bottom: 0.4rem;
+}
+
+.message a {
+  color: black;
+}
+
+.message {
+  display: flex;
+}
+
+
+.container-fluid {
+  background-color: #DB4A21;
+  padding: 1rem;
+  width: 100vw;
+}
+
+.dropdown-menu.show {
+  background-color: #DB4A21;
+  border-radius: 1rem;
+  /* opacity: 0.1; */
+  /* background-color: rgba(219,74,33,0.3); */
+
+}
+
+#navbarNavDropdown ul li a {
+  font-weight: 600;
+  color: whitesmoke;
+}
+
+a.dropdown-item:hover {
+  /* color: black; */
+  background-color: black;
+}
+
+#navbarNavDropdown>ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.rohit {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.second-footer {
+  background-color: #DB4A21;
+  display: flex;
+  padding: 2rem;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.second-footer-first {
+  display: flex;
+}
+
+.team {
+  position: relative;
+  top: 2rem;
+  left: 4rem;
+  color: whitesmoke;
+  list-style: none;
+  font-size: 1.4rem;
+}
+
+.team p a {
+  color: whitesmoke;
+  border-bottom: 1px solid black
+}
+
+.link>h3 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link-do {
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.link-do ul li {
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  padding: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.link-do ul li Link {
+  text-decoration: none;
+}
+
+.list {
+  text-decoration: none;
+}
+
+.link-do ul li a {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: .1rem;
+}
+
+.link-do>ul {
+  margin-left: 4rem;
+}
+
+/* sports */
+.sports-para {
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #DB4A21;
+}
+
+
+/* play school */
+.chemistry-lab {
+  margin: 4rem;
+}
+
+.chemistry-lab>h1,
+.chemistry-lab>h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.chemistry-lab p,
+.chemistry-lab ul li {
+  padding: 1rem;
+  font-size: 1.2rem;
+  word-spacing: .2rem;
+  list-style-type: disc;
+}
+
+
+.carousel-item {
+  height: 75vh;
+}
+
+.carousel-item img {
+  height: 75vh;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  color: black;
+  font-weight: 700;
+  /* dff */
+}
+
+
+
+/* admission */
+
+.addmission {
+  margin: 2rem;
+}
+
+.addmission h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  margin: 1rem;
+}
+
+/* .addmission ul{
+  
+} */
+
+.addmission ul li {
+  margin: 1.4rem;
+  font-size: 1.2rem;
+  list-style-type: upper-roman;
+}
+
+.header-form {
+  margin: 6rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.student-profiles {
+  margin: 4rem;
+  position: relative;
+}
+
+.student-profiles>h3 {
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 3rem;
+  /* position: absolute;
+   left: 14rem;
+   top: -7rem; */
+}
+
+.profile-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 6rem;
+  row-gap: 2rem;
+  margin-left: 5rem;
+  margin-right: 10rem;
+}
+
+.students-fill {
+  /* border: 2px solid red; */
+  width: 100%;
+}
+
+.students-fill label {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.students-fill input,
+.students-fill select {
+  width: 100%;
+  padding: 8px 25px;
+  margin-top: 1rem;
+  outline: none;
+  border: none;
+  box-shadow: 10px 10px 20px 1px gray;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* .students-fill input:focus,.students-fill select:focus{
+  border: #1e90ff 5px solid;
+} */
+.students-fill input:hover,
+.students-fill select:hover {
+  background: wheat;
+  /* animation: example ease-in-out 3s; */
+}
+
+.text-muted {
+  color: #6c7575 !important;
+}
+
+option {
+  font-weight: normal;
+  display: block;
+
+}
+
+.upload-photo {
+  width: 73%;
+}
+
+.fontpassword {
+  position: relative;
+}
+
+.fontpassword i {
+  position: absolute;
+  left: 105px;
+  top: 480px;
+  color: gray;
+}
+
+
+.payment-container {
+  margin: 8rem 0;
+  display: flex;
+  align-items: start;
+  /* grid-template-columns: auto auto; */
+  justify-content: space-around;
+
+}
+
+.payment-container-grid1 {
+  padding: 3rem;
+}
+
+.payment-container-grid1>div:nth-child(1) {
+  display: flex;
+}
+
+.payment-container-grid1>div:nth-child(1) img {
+  width: 70px;
+  height: 70px;
+}
+
+.payment-container-grid1>div:nth-child(1) h1 {
+  /* box-shadow: 1px 14px 45px 1px rgb(158, 143, 143); */
+  position: relative;
+  top: 25px;
+  left: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.payment-container-grid1>div:nth-child(2) {
+  margin: 1rem 0;
+}
+
+.payment-container-grid1>div:nth-child(2) h1 {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.payment-container-grid1>div:nth-child(2) p {
+  font-size: 1.1rem;
+}
+
+.payment-container-grid1>div:nth-child(2) p strong {
+  font-weight: 600;
+}
+
+.payment-container-grid1>div:nth-child(3) h1 {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+}
+
+.payment-container-grid1>div:nth-child(3) p {
+  font-size: 1.1rem;
+  color: black;
+}
+
+.payment-container-grid1>div:nth-child(3) p a {
+  color: black;
+}
+
+.payment-container-grid1>div:nth-child(3) p i {
+  font-size: 1.1rem;
+  margin-right: .2rem;
+  color: #8B042D;
+}
+
+.payment-container-grid1>div:nth-child(4) h1 {
+  /* margin: 1rem 0; */
+  margin-top: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.payment-container-grid1>div:nth-child(4) p a {
+  font-size: 1.1rem;
+  cursor: pointer;
+  /* margin: 1rem 0; */
+}
+
+.payment-terms {
+  margin-bottom: 2rem;
+}
+
+.payment-container-grid1>div:nth-child(4)>p:nth-child(3) {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.payment-container-grid1,
+.payment-container-grid2 {
+  /* border: 2px solid red; */
+  width: 65vh;
+}
+
+.payment-container-grid1 {
+  /* position: -webkit-sticky; */
+  position: sticky;
+  top: 0px;
+  left: 0;
+  width: 65vh;
+}
+
+.payment-container-grid2 {
+  width: 80vh;
+  box-shadow: 2px 2px 34px 2px;
+  padding: 3rem;
+}
+
+.payment-container-grid2 h1 {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  font-weight: 600;
+}
+
+.payment-form>div {
+  margin: 1.6rem 0;
+}
+
+.payment-form>div>input {
+  width: 100%;
+  margin-top: 1rem;
+  padding: .6rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.payment-form>div #email {
+  /* font-family: 'Courier New', Courier, monospace; */
+  position: relative;
+  right: 3rem;
+}
+
+.payment-form>div>input:hover {
+  background-color: #DB4A21;
+}
+
+.submit-payment {
+  display: flex;
+  /* box-shadow: 3px 4px 45px; */
+  justify-content: flex-end;
+}
+
+.submit-payment i {
+  font-size: 2rem;
+  color: #DB4A21;
+  margin: 1rem;
+  padding: .5rem;
+  box-shadow: 4px 4px 4px wheat;
+  border-radius: 50%;
+}
+
+.btn-payment {
+  padding: 2px 20px;
+  background-color: #DB4A21;
+  outline: none;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+
+/* hostel */
+
+.hostel {
+  margin: 2rem;
+}
+
+.hostel h1 {
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.hostel ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1rem;
+}
+
+.hostel ul li {
+  /* border: 3px solid red; */
+  font-size: 1.2rem;
+  padding: 2rem;
+  background-color: #DB4A21;
+  list-style: none;
+  box-shadow: 2px 2px 10px grey;
+  color: whitesmoke
+}
+
+.hostel ul li h5 {
+  margin-bottom: 7px;
+  font-weight: 600;
+  color: #8B042D;
+  border-bottom: #7e7175;
+  text-align: center;
+}
+
+
+
+
+
+
+
+/* login-form */
+
+.bg {
+  /* height: 70px; */
+  margin: 3rem 0;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+  box-shadow: 2px 3px 12px;
+
+}
+
+.Register-img {
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+
+.register-heading-img {
+  width: 100px;
+  height: 100px;
+  margin: 1rem;
+
+}
+
+form {
+  border-color: #ccc;
+  border-width: 1px;
+}
+
+#heading {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+#heading h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 1rem;
+}
+
+#heading p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.log-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.log-in>h1 {
+  margin: 1rem;
+  font-size: 1.4rem;
+  font-weight: 550;
+}
+
+form p:nth-of-type(1) {
+  text-align: end;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+form p:nth-of-type(2) {
+  font-size: 1.2rem;
+  margin: 1.2rem;
+}
+
+input {
+  font-size: 18px;
+  padding-bottom: 12px;
+  margin-bottom: 36px;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid #ccc;
+  /* background-color: #DB4A21; */
+}
+
+input:focus,
+input:hover {
+  outline: none;
+
+}
+
+.submit {
+  background-color: #DB4A21;
+  padding: 12px 24px 12px 24px;
+  font-size: 18px;
   color: white;
+  border: none;
+  margin-left: 250px;
+  border-radius: .4rem;
 }
 
-.App-link {
-  color: #61dafb;
+.white {
+  background-color: white;
+  /* width: 500px; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#username {
+  margin-top: 50px;
+  width: 500px;
+  margin-left: 50px;
+}
+
+#email {
+  width: 500px;
+  margin-left: 50px;
+}
+
+#password {
+  width: 500px;
+  margin-left: 50px;
+}
+
+#confirm-password {
+  width: 500px;
+  margin-left: 50px;
+}
+
+.widths {
+  width: 100%;
+}
+
+
+
+/* gallery */
+.gallery img {
+  width: 30vw;
+  height: 50vh;
+  box-shadow: 2px 4px 10px gray;
+  margin: 1rem;
+
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* grid-gap: 2rem; */
+  overflow: hidden;
+}
+
+/* news */
+
+.news,
+.events {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.news img,
+.events img {
+  border-radius: 2px solid red;
+  margin-bottom: 8rem;
+  width: 80vw;
+  height: 80vh;
+  /* height: 50px; */
+  box-shadow: 2px 4px 10px gray;
+}
+
+
+/* our school , journey */
+.our-school {
+  display: flex;
+
+}
+
+.our-school-container {
+  margin: 2rem;
+  box-shadow: 2px 2px 4px wheat;
+  padding: 10px;
+}
+
+.our-school-container h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.our-school-container p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  /* font-style: oblique; */
+  /* letter-spacing: 2px; */
+  /* word-break: break-all; */
+}
+
+.our-school-img {
+  width: 40vw;
+  height: 40vh;
+}
+
+.our-school-img img {
+  width: 40vw;
+  height: 40vh;
+}
+
+
+
+/* number  */
+.number {
+  display: flex;
+  justify-content: space-around;
+  /* margin: 3rem; */
+  padding: 3rem;
+  text-align: center;
+  background-color: #DB4A21;
+  font-size: 1.4rem;
+  margin-top: 10px;
+}
+
+/* .member:hover {
+  background-color: whitesmoke;
+  border-radius: 10px;
+
+} */
+
+.student-img {
+  width: 50px;
+
+}
+
+.quo {
+  padding: 4rem;
+  text-align: center;
+}
+
+.quo h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.quo p {
+  font-size: 1.3rem;
+  margin-top: 0.4rem;
+  font-weight: 400;
+}
+
+
+.director {
+  display: flex;
+}
+
+.director-message {
+  margin: 1rem;
+  padding: 0.8rem;
+  box-shadow: 5px 5px 30px wheat;
+}
+
+.director-message h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.director-message p {
+  font-size: 1rem;
+
+}
+
+.director-img {
+  margin: 1rem;
+}
+
+.director-img img {
+  width: 30vw;
+  height: 50vh;
+}
+
+
+.advice {
+  margin: 2rem 8rem;
+}
+
+.advice h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  color: #8B042D;
+  /* text-decoration: underline; */
+}
+
+.advice h2 {
+  font-size: 1.5rem;
+  color: #8B042D;
+  font-weight: 600;
+}
+
+.advice ul li {
+  list-style-type: disc;
+}
+
+.advice ul li strong {
+  color: #8B042D;
+}
+
+.advice ul li,
+.advice p {
+  font-size: 1.2rem;
+}
+
+
+.director-img1 img {
+  width: 200px;
+  height: 200px;
+  margin: 1rem;
+}
+
+
+
+/* school fees  */
+.school-fee-heading {
+  background-color: #DB4A21;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: whitesmoke;
+  /* margin: 1rem; */
+  padding: 4rem;
+}
+
+.school-fee-rate {
+  margin: 2rem 8rem;
+  font-size: 1.1rem;
+}
+
+.school-fee-rate h2 {
+  text-align: center;
+  font-weight: 600;
+  padding: 1rem;
+  background-color: #8B042D;
+  color: whitesmoke;
+}
+
+.school-fee-rate table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.school-fee-rate th,
+.school-fee-rate td {
+  border: 2px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.school-fee-rate th {
+  background-color: #f2f2f2;
+}
+
+
+/* scroll 
+ */
+ .scroll {
+  margin: 1rem 0;
+ }
+ .scroll marquee{
+  /* width: 1.4rem; */
+  height: 1.6rem;
+    background-color:whitesmoke;
+    /* padding: 19px; */
+ }
+ .scroll marquee ul{
+  display: flex;
+  color: #8B042D;
+ }
+
+.scroll marquee ul li{
+  margin: 0 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.scroll marquee ul li Link{
+  color: red;
+}
+.marqueecolor {
+  color: #8B042D;
+  /* color: red; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:992px) {
+
+  .first ul li,
+  .second ul li {
+    margin-left: 1rem;
+    font-weight: 600;
+    list-style: none;
+    font-size: 0.8rem;
+    padding: .5rem;
+    margin-left: 2rem;
+    border: none;
+    color: whitesmoke;
   }
-  to {
-    transform: rotate(360deg);
+
+  .hostel ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1rem;
+  }
+
+  .gallery img {
+    width: 45vw;
+    height: 50vh;
+    box-shadow: 2px 4px 10px gray;
+    margin: 1rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+    /* grid-gap: 1rem; */
+  }
+
+  .payment-container {
+    overflow: hidden;
+  }
+
+  /* our school  */
+  .our-school {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .our-school-img {
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+  }
+
+  .our-school-img img {
+    width: 80vw;
+    height: 60vh;
+
+  }
+
+  .director-img {
+    margin: 1rem;
+  }
+
+  .director-img img {
+    width: 30vw;
+    height: 40vh;
+  }
+
+  .advice {
+    margin: 2rem 6rem;
+  }
+}
+
+@media screen and (max-width:850px) {
+  .payment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advice {
+    margin: 2rem 5rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    background-color: #DB4A21;
+    padding: 0.4rem;
+    margin-bottom: 0;
+  }
+
+  .first ul,
+  .second ul {
+    margin-left: 2px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .first ul li,
+  .second ul li {
+    margin-left: 1rem;
+    font-weight: 600;
+    list-style: none;
+    font-size: 1rem;
+    padding: .5rem;
+    border: none;
+    color: whitesmoke;
+  }
+
+  .sec-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+  }
+
+
+  .school-name {
+    margin-left: 1.4rem;
+    margin-top: 1rem;
+  }
+
+  .school-name H1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+    color: #8B042D;
+  }
+
+  .office {
+    display: flex;
+    margin-right: 0rem;
+  }
+
+  .office i,
+  .message i {
+    margin-right: 0.7rem;
+    font-size: 1.5rem;
+
+  }
+
+  .office h1,
+  .message h1 {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #8B042D;
+    margin-bottom: 0.4rem;
+  }
+
+  .second-footer ul li {
+    list-style: none;
+  }
+
+  .second-footer {
+    background-color: #DB4A21;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 2rem;
+    justify-content: space-around;
+  }
+
+  .second-footer-first {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .second-footer-first .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .team {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .link>h3 {
+    text-align: center;
+  }
+
+
+  /* Admission */
+
+  .addmission {
+    margin: 2rem;
+  }
+
+  .addmission h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    /* margin: 1rem; */
+  }
+
+
+  .addmission ul li {
+    /* margin: 1.4rem; */
+    font-size: 1.2rem;
+  }
+
+  .header-form {
+    /* margin: 6rem; */
+    font-size: 2rem;
+    font-weight: 700;
+    /* text-align: center; */
+  }
+
+  .student-profiles>h3 {
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  .profile-container {
+    display: grid;
+    grid-template-columns: auto;
+    /* column-gap: 6rem; */
+    /* row-gap: 2rem; */
+    /* margin-left:5rem; */
+    /* margin-right: 10rem; */
+    width: 75%;
+  }
+
+  .students-fill {
+    /* border: 2px solid red; */
+    width: 100%;
+  }
+
+  .students-fill input,
+  .students-fill select {
+    width: 100%;
+    padding: 8px 25px;
+    margin-top: 1rem;
+    outline: none;
+    border: none;
+    box-shadow: 10px 10px 20px 1px gray;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  .hostel ul {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+  }
+
+  .gallery img {
+    width: 75vw;
+    height: 75vh;
+    box-shadow: 2px 4px 10px gray;
+    margin: 1rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    /* grid-gap: 1rem; */
+  }
+
+  .number {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .director {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .director-img {
+    margin: 1rem;
+  }
+
+  .director-img img {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .director-img1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .director-img1 img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .school-fee-rate {
+    margin: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .advice {
+    margin: 2rem 2rem;
+  }
+}
+
+@media screen and (max-width:560px) {
+  .link-do {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+  }
+
+  .link-do ul li {
+    text-align: center;
+
+  }
+
+  .link-do ul li a {
+    font-size: 1rem;
+  }
+
+  .hostel ul {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+  }
+
+  .events img {
+    border-radius: 2px solid red;
+    margin-bottom: 8rem;
+    width: 90vw;
+    height: 60vh;
+    /* height: 50px; */
+    box-shadow: 2px 4px 10px gray;
+  }
+
+  .payment-container-grid2 {
+    width: 60vh;
+    box-shadow: 2px 2px 34px 2px;
+    padding: 3rem;
+  }
+
+  .payment-form>div #email {
+    /* font-family: 'Courier New', Courier, monospace; */
+    /* position: relative;
+  right: 3rem; */
+    width: 100%;
+  }
+
+  .school-fee-rate {
+    margin: 0rem;
+    font-size: 1.1rem;
+  }
+
+  .advice {
+    margin: 2rem 1rem;
   }
 }
